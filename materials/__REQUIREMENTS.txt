@@ -1,0 +1,14 @@
+Requirements to be fulfilled before participating in the class:
+
+- An account on GitHub
+- Send your GitHub user name to benjamin.stuermer@pnnl.gov so that I can grant write access to the training repository
+- Access to constance.pnl.gov
+- Make sure you have an SSH key. These are the steps to do so:
+    - Log into constance.pnl.gov
+    - Run the command `cat ~/.ssh/id_rsa.pub`. The response is either:
+        - "ssh-rsa <lots of gibberish>" -- Great, you're done!
+        - "No such file or directory" -- Not to worry! You just need to generate an SSH key, which is very easy:
+            - Run the command `ssh-keygen -t rsa`
+            - You will be prompted three times for input: Don't enter anything, just press <enter> each time
+            - Now run the command `cat ~/.ssh/id_rsa.pub` again, and you should get "ssh-rsa <gibberish>" back.
+            - If anything goes wrong, just contact benjamin.stuermer@pnnl.gov and I'm happy to help!
