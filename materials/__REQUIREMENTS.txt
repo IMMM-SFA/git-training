@@ -1,0 +1,14 @@
+Requirements to be fulfilled before participating in the class:
+
+- An account on GitHub (github.com)
+- Send your GitHub user name to benjamin.stuermer@pnnl.gov so that I can grant write access to the training repository
+- A Unix environment (Linux or MacOS) with Git installed. If you have access to PNNL's Constance cluster (constance.pnl.gov), then simply logging into that system will work perfectly. If not, any other Unix environment (including MacOS) with Git installed will work fine. Windows is unfortunately not supported by this presentation - you can use Git's command line in Windows, but it takes a bit of setup that is not in scope for this seminar.
+- Make sure you have an SSH key. These are the steps to do so:
+    - Open a terminal on the system you'll be working in
+    - Run the command `cat ~/.ssh/id_rsa.pub`. The response is either:
+        - "ssh-rsa <lots of gibberish>" -- Great, you're done!
+        - "No such file or directory" -- Not to worry! You just need to generate an SSH key, which is very easy:
+            - Run the command `ssh-keygen -t rsa`
+            - You will be prompted three times for input: Don't enter anything, just press <enter> each time
+            - Now run the command `cat ~/.ssh/id_rsa.pub` again, and you should get "ssh-rsa <gibberish>" back.
+            - If anything goes wrong, just contact benjamin.stuermer@pnnl.gov and I'm happy to help!
